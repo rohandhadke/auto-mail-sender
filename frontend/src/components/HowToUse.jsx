@@ -3,7 +3,7 @@ import React from "react";
 const HowToUse = () => {
   return (
     <div className="container py-4">
-      <h2 className="mb-4">📧 How to Use Auto Mail Sender</h2>
+      <h2 className="mb-4">How to Use Auto Mail Sender</h2>
 
       <ol className="list-group list-group-numbered mb-4">
         <li className="list-group-item">
@@ -32,7 +32,7 @@ const HowToUse = () => {
         </li>
       </ol>
 
-      <h4 className="mb-3">🔐 How to Generate an App Password in Gmail</h4>
+      <h4 className="mb-3">How to Generate an App Password in Gmail</h4>
       <p>
         Gmail requires an App Password to allow third-party apps like Auto Mail Sender to access your email securely. Follow these steps to generate it:
       </p>
@@ -61,11 +61,15 @@ const HowToUse = () => {
         <li className="list-group-item">
           <strong>Important:</strong> You do not need to remember this app password. You can always revoke it and generate a new one.
         </li>
+        <li className="list-group-item">
+            <strong>Important:</strong> If you are getting Problem to find or Generate app password then go to this link <a href="https://myaccount.google.com/apppasswords" target="_blank">https://myaccount.google.com/apppasswords</a>
+        </li>
       </ol>
 
       <div className="alert alert-warning mt-3" role="alert">
         ⚠️ Never share your app password with others. It is like a key to access your email.
       </div>
+
     </div>
   );
 };

@@ -1,14 +1,14 @@
 import smtplib
 from email.message import EmailMessage
 
-def send_emails_to_users(email_list, mail_content, sender_email, sender_password, attachment_data=None, attachment_filename=None):
+def send_emails_to_users(email_list, subject, mail_content, sender_email, sender_password, attachment_data=None, attachment_filename=None):
     sent_emails = []
 
     for recipient in email_list:
         try:
             msg = EmailMessage()
             msg.set_content(mail_content)
-            msg["Subject"] = "Automated Email"
+            msg["Subject"] = subject  # ✅ Dynamic subject
             msg["From"] = sender_email
             msg["To"] = recipient
 

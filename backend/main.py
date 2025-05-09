@@ -19,6 +19,7 @@ async def send_emails(
     mail_file: UploadFile = File(...),
     sender_email: str = Form(...),
     sender_password: str = Form(...),
+    subject: str = Form(...), 
     attachment: UploadFile = File(None)
 ):
     try:
@@ -42,6 +43,7 @@ async def send_emails(
         # Send emails using user's credentials
         result = send_emails_to_users(
             email_list=email_list,
+            subject=subject,
             mail_content=mail_content,
             sender_email=sender_email,
             sender_password=sender_password,
