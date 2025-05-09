@@ -23,16 +23,6 @@ This project is a web-based tool to send bulk emails using Gmail. It allows user
 
 ---
 
-## 📂 Project Structure
-
-├── frontend/
-│ └── SendEmails.jsx
-│
-├── backend/
-│ ├── main.py
-│ └── send_mail.py
-│
-├── README.md
 
 ## How to Use
 1. Enter your Gmail and App Password.
@@ -52,14 +42,14 @@ This project is a web-based tool to send bulk emails using Gmail. It allows user
 5. View the success/failure message.
 
 
-## Security Note
+## 🛡️ Security Note
     - Your Gmail password is never stored.
 
     - Always use App Passwords, not your main Gmail password.
 
     - Use this tool responsibly to avoid spam and follow Gmail's sending limits.
 
-## Contributing
+## 🤝 Contributing
 This project is open source and welcomes contributions from everyone!
 If you'd like to add features, fix bugs, or improve documentation:
 
